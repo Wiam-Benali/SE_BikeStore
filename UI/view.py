@@ -36,6 +36,7 @@ class View:
             on_change=lambda e: print(f"Giorno selezionato: {self.dp1.value}"),
             on_dismiss=lambda e: print("Data non selezionata")
         )
+        self.controller.populate_dd_categoria()
 
         self.page.overlay.append(self.dp1)
         self.pulsante_start_date = ft.ElevatedButton("Data Inizio",
